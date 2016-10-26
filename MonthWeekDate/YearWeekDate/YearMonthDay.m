@@ -196,15 +196,15 @@
 }
 
 /**
- 今年最后一天         存在问题
+ 今年最后一天
  */
 - (NSDate *)endDateThisYear {
     
     NSCalendar *cal = [NSCalendar currentCalendar];
     NSDateComponents *components = [cal components:NSCalendarUnitYear fromDate:[[NSDate alloc] init]];
     
-    [components setDay:(components.day - 1)];
     [components setYear:(components.year + 1)];
+    [components setSecond:(components.second - 1)];
     NSDate *endOfThisYear = [cal dateFromComponents:components];
     
     return endOfThisYear;
