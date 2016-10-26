@@ -16,6 +16,7 @@
 		448A058A1DC099A1006EB068 /* MonthWeekDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 448A05891DC099A1006EB068 /* MonthWeekDateTests.m */; };
 		448A05951DC099A1006EB068 /* MonthWeekDateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 448A05941DC099A1006EB068 /* MonthWeekDateUITests.m */; };
 		448A05A51DC099DF006EB068 /* YearMonthDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 448A05A41DC099DF006EB068 /* YearMonthDay.m */; };
+		448A05A71DC0AD66006EB068 /* Year.png in Resources */ = {isa = PBXBuildFile; fileRef = 448A05A61DC0AD66006EB068 /* Year.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		448A05961DC099A1006EB068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448A05A31DC099DF006EB068 /* YearMonthDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YearMonthDay.h; sourceTree = "<group>"; };
 		448A05A41DC099DF006EB068 /* YearMonthDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YearMonthDay.m; sourceTree = "<group>"; };
+		448A05A61DC0AD66006EB068 /* Year.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Year.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		448A056E1DC099A1006EB068 /* MonthWeekDate */ = {
 			isa = PBXGroup;
 			children = (
+				448A05A61DC0AD66006EB068 /* Year.png */,
 				448A05A21DC099DF006EB068 /* YearWeekDate */,
 				448A05721DC099A1006EB068 /* AppDelegate.h */,
 				448A05731DC099A1006EB068 /* AppDelegate.m */,
@@ -259,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				448A05A71DC0AD66006EB068 /* Year.png in Resources */,
 				448A057F1DC099A1006EB068 /* LaunchScreen.storyboard in Resources */,
 				448A057C1DC099A1006EB068 /* Assets.xcassets in Resources */,
 				448A057A1DC099A1006EB068 /* Main.storyboard in Resources */,
@@ -519,6 +523,7 @@
 				448A059B1DC099A1006EB068 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		448A059C1DC099A1006EB068 /* Build configuration list for PBXNativeTarget "MonthWeekDateTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +532,7 @@
 				448A059E1DC099A1006EB068 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		448A059F1DC099A1006EB068 /* Build configuration list for PBXNativeTarget "MonthWeekDateUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +541,7 @@
 				448A05A11DC099A1006EB068 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
