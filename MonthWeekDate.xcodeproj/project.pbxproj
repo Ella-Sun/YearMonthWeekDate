@@ -15,6 +15,7 @@
 		448A057F1DC099A1006EB068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448A057D1DC099A1006EB068 /* LaunchScreen.storyboard */; };
 		448A058A1DC099A1006EB068 /* MonthWeekDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 448A05891DC099A1006EB068 /* MonthWeekDateTests.m */; };
 		448A05951DC099A1006EB068 /* MonthWeekDateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 448A05941DC099A1006EB068 /* MonthWeekDateUITests.m */; };
+		448A05A51DC099DF006EB068 /* YearMonthDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 448A05A41DC099DF006EB068 /* YearMonthDay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		448A05901DC099A1006EB068 /* MonthWeekDateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonthWeekDateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		448A05941DC099A1006EB068 /* MonthWeekDateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonthWeekDateUITests.m; sourceTree = "<group>"; };
 		448A05961DC099A1006EB068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448A05A31DC099DF006EB068 /* YearMonthDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YearMonthDay.h; sourceTree = "<group>"; };
+		448A05A41DC099DF006EB068 /* YearMonthDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YearMonthDay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		448A056E1DC099A1006EB068 /* MonthWeekDate */ = {
 			isa = PBXGroup;
 			children = (
+				448A05A21DC099DF006EB068 /* YearWeekDate */,
 				448A05721DC099A1006EB068 /* AppDelegate.h */,
 				448A05731DC099A1006EB068 /* AppDelegate.m */,
 				448A05751DC099A1006EB068 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				448A05961DC099A1006EB068 /* Info.plist */,
 			);
 			path = MonthWeekDateUITests;
+			sourceTree = "<group>";
+		};
+		448A05A21DC099DF006EB068 /* YearWeekDate */ = {
+			isa = PBXGroup;
+			children = (
+				448A05A31DC099DF006EB068 /* YearMonthDay.h */,
+				448A05A41DC099DF006EB068 /* YearMonthDay.m */,
+			);
+			path = YearWeekDate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +288,7 @@
 			files = (
 				448A05771DC099A1006EB068 /* ViewController.m in Sources */,
 				448A05741DC099A1006EB068 /* AppDelegate.m in Sources */,
+				448A05A51DC099DF006EB068 /* YearMonthDay.m in Sources */,
 				448A05711DC099A1006EB068 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
