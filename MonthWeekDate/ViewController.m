@@ -43,6 +43,7 @@
     NSDictionary *thisMonth = [day thisMonth];
     NSDictionary *lastMonth = [day lastMonth];
     NSDictionary *thisYear = [day thisYear];
+    NSString *lastTodayStr = [day dateStrLastYear];
     
 //    NSLog(@"\ntoday:%@\n*****",todayDic[@"start"]);
 //    NSLog(@"\nthisWeek:%@\n*****%@\n*****",thisWeek[@"start"],thisWeek[@"end"]);
@@ -54,8 +55,9 @@
     NSString *thisMonthStr = [NSString stringWithFormat:@"thisMonth:\n%@\n%@\n*****",thisMonth[@"start"],thisMonth[@"end"]];
     NSString *lastMonthStr = [NSString stringWithFormat:@"lastMonth:\n%@\n%@\n*****",lastMonth[@"start"],lastMonth[@"end"]];
     NSString *thisYearStr = [NSString stringWithFormat:@"thisYear:\n%@\n%@\n*****",thisYear[@"start"],thisYear[@"end"]];
+    NSString *todayLastYearStr = [NSString stringWithFormat:@"A year and a half ago:\n%@\n*****",lastTodayStr];
     
-    NSString *dateText = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@\n",todayStr,thisWeekStr,thisMonthStr,lastMonthStr,thisYearStr];
+    NSString *dateText = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@\n%@",todayStr,thisWeekStr,thisMonthStr,lastMonthStr,thisYearStr,todayLastYearStr];
     self.dateLabel.text = dateText;
 }
 

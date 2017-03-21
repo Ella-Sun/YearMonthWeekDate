@@ -12,6 +12,12 @@
 
 
 /**
+ 上一年的今天
+ */
+- (NSDate *)dateLastYear;
+- (NSString *)dateStrLastYear;
+
+/**
  今天
  */
 - (NSDictionary *)today;

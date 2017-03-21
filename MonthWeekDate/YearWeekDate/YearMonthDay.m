@@ -210,8 +210,33 @@
     return endOfThisYear;
 }
 
-
 #pragma mark - 外部方法
+
+/**
+ 今天的上一年
+ 
+ @return 去年今天
+ */
+- (NSDate *)dateLastYear
+{
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDateComponents *components = [cal components:NSCalendarUnitYear |NSCalendarUnitMonth | NSCalendarUnitDay fromDate:[[NSDate alloc] init]];
+    
+    [components setYear:(components.year - 1)];
+    [components setMonth:(components.month - 6)];
+    
+    NSDate *endOfThisYear = [cal dateFromComponents:components];
+    
+    return endOfThisYear;
+}
+
+- (NSString *)dateStrLastYear
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyy-MM-dd";
+    NSString *lastDateStr = [dateFormatter stringFromDate:[self dateLastYear]];
+    return lastDateStr;
+}
 
 - (NSDictionary *)today {
     
